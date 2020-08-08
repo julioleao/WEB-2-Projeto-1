@@ -1,0 +1,113 @@
+body {
+    background-color: rgba(71, 157, 255, 0.144);
+}
+
+#logo {
+    max-width: 60%;
+    height: auto;
+    padding-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.container{
+    width: 60%;
+    margin: 50px auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.card-container {
+    padding: 2px 16px;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+    
+}
+  
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  font-family: 'Rubik Mono One', sans-serif;
+
+}
+  
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .card {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-width: 1px;
+  border-color: blue;
+}
+
+div.search button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  color: rgb(237, 29, 36);
+  background: rgb(255, 203, 5);
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+  border-width: 1px;
+  border-color: blue;
+}
+
+div.search button:hover {
+  cursor: pointer;
+  opacity: 100;
+}
+
+div.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
