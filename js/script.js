@@ -17,7 +17,6 @@ $("#searchBtn").click(function () {
         
         return;
     }
-    $(".row").show();
     var input = document.getElementById("searchField").value;
     listAll( input );
 });
