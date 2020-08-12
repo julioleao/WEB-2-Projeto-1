@@ -11,12 +11,16 @@ $("#searchBtn").click(function () {
     var input = document.getElementById("searchField").value.length;
     //console.log(input);
     if (input < 3){
-        alert("Informe um valor com 3 ou mais caracteres!");
+        var str = "Informe um valor com 3 ou mais caracteres!";
+        $(".validate").empty();
+        $(".validate").append(str);
+        //alert("Informe um valor com 3 ou mais caracteres!");
         $(".display-data").empty();
         document.getElementById("searchField").value = '';
         
         return;
     }
+    $(".validate").empty();
     var input = document.getElementById("searchField").value;
     listAll( input );
 });
@@ -35,7 +39,11 @@ function listAll( input ) {
         var str = '';
 
         if(comp < 1){
-            alert("Sem resultados! Tente 'Bulbasaur'");
+            var str = "Sem Resultados!";
+            //alert("Sem resultados! Tente 'Bulbasaur'");
+            $(".row").empty();
+            $(".validate").empty();
+            $(".validate").append(str);
             document.getElementById("searchField").value = '';
             return;
         }

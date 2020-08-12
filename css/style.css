@@ -34,6 +34,13 @@ body {
   padding: 0 10px;
     
 }
+.validate {
+  color: red;
+  font-size: 20px;
+  padding-top: 60px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
   
 .row {margin: 0 -5px;}
 
